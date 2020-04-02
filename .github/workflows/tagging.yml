@@ -20,6 +20,8 @@ jobs:
 
     - name: Close Milestone With Tagging
       uses: adlerhsieh/prepare-release@0.1.0
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         repo_owner: adlerhsieh
         repo: test-actions
